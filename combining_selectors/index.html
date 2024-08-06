@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Combining Selectors</title>
+
+	<style>
+
+
+		h2 {
+			color: red;
+			text-align: center;
+		}
+
+
+
+		.blue {
+			color: blue;
+		}
+
+
+
+		p span {
+			
+			background-color: green;
+			font-size: 30px;
+		}
+
+
+
+		p.brown{
+
+			color: brown;
+		}
+
+
+
+
+		article > p {
+
+			color: deeppink;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<h2>Combining Selectors</h2>
+	
+        <ul>
+			<li><h3 class="blue">Element with Class Selector</h3>	
+			<p class="brown">IN this every P that has class big will be affected and all other P will remain<span> unaffected.</span></p>
+			<article>
+		    <p>
+				p.big {<br>
+                       font-size: 30px;<br>
+                   
+                  }<br>  
+			</p>
+		    </article>
+			<p>In this code<span> p.big </span>is called Element with class Selector.</p>
+		    </li><br>
+
+		
+			<li><h3 class="blue">Child Selector</h3>
+			<p class="brown">Every P that is direct child of article will be affected and all other p will remain<span> unaffected.</span></p>
+			<article>
+			<p>
+				article > p {<br>
+                        color: red;<br>
+                        }
+			</p>
+		    </article>
+			<p>In this code<span> article > p </span> is called Child Selector.</p>
+		    </li><br>
+
+		
+			<li><h3 class="blue">Descendant Selector</h3>
+			<p class="brown">In this type of selector every p inside article element at any level whether its not direct child of article will be <span>affected.</span></p>
+			<article>
+			<p>
+				article p {<br>
+                        text-align: center;<br>
+                        color: red;<br>
+                       }<br>
+			</p>
+		    </article>
+			<p>In this code<span> article p</span> is called desecdant selector.</p>
+		    </li>
+		</ul>	
+		
+
+
+</body>
+</html>
