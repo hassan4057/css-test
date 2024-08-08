@@ -6,6 +6,12 @@
 	<title>Pseudo Class Selectors</title>
 	<style>
 
+		h2 {
+
+			text-align: center;
+			color: red;
+		}
+
 		ul li {
 
 			list-style: none;
@@ -44,17 +50,25 @@
 	    	font-size: 24px;
 	    }
 
+
+	    section:hover div:nth-child(5){
+
+	    	font-size: 24px;
+	    }
+
 	</style>
 </head>
 <body>
 
-	<h2>Pseudo Class selectors</h2>
+	<h2 style="color: brown;text-align: left;">Pseudo Class selectors</h2>
 
 	<ul>
 		<li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
 		<li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
 		<li><a href="https://www.overleaf.com" target="_blank">Overleaf</a></li>
 	</ul>
+
+	<section>
 
 	<div>Div 1</div>
 	<div>Div 2</div>
@@ -64,6 +78,8 @@
 	<div>Div 6</div>
 	<div>Div 7</div>
 	<div>Div 8</div>
+
+	</section>
 
 
 </body>
